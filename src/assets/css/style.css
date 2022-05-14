@@ -6,24 +6,31 @@ body {
     font-family: 'Recursive', sans-serif;
     font-family: 'Righteous', cursive;
     font-family: 'Roboto', sans-serif;
-    position: absolute;
+    position: relative;
 }
 
 .paginaInicial {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    height: 317px;
+    height: 100%;
+    width: 100%;
 }
 
-.paginaInicial>img {
+.paginaInicialTemplate {
+    height: 317px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginaInicialTemplate>img {
     height: 161px;
     width: 136px;
     margin-top: 148px;
 }
 
-.paginaInicial>main {
+.paginaInicialTemplate>main {
     font-family: Righteous;
     font-size: 36px;
     font-weight: 400;
@@ -32,7 +39,7 @@ body {
     margin-bottom: 30px;
 }
 
-.paginaInicial>button {
+.paginaInicialTemplate>button {
     width: 246px;
     display: flex;
     justify-content: center;
@@ -40,7 +47,11 @@ body {
     border-radius: 3px;
 }
 
-.paginaInicial>button>.textoBotao {
+.paginaInicialTemplate>button:hover {
+    cursor: pointer;
+}
+
+.paginaInicialTemplate>button>.textoBotao {
     height: 54px;
     color: #d70900;
     font: Recursive;
@@ -56,6 +67,10 @@ body {
     margin-top: 42px;
     margin-left: 59px;
     margin-bottom: 58px;
+}
+
+.paginaRecall>header:hover {
+    cursor: pointer;
 }
 
 .paginaRecall>header>img {
@@ -81,6 +96,10 @@ body {
     margin-left: 37px;
     border-radius: 3px;
     margin-bottom: 25px;
+}
+
+.recall:hover {
+    cursor: pointer;
 }
 
 .recall>.pergunta {
