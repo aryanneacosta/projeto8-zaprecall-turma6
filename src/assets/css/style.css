@@ -86,6 +86,10 @@ body {
     color: white;
 }
 
+.paginaRecall>ul {
+    margin-bottom: 100px;
+}
+
 .recall {
     height: 65px;
     width: 300px;
